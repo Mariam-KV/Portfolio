@@ -132,3 +132,17 @@ p {
 
   line-height: 21px;
 }
+.headerContact h2 {
+  font-size: 64px;
+  line-height: 85px;
+}
+.headerContact {
+  padding: 180px 80px;
+}
+.headerContact h3 {
+  font-family: var(--font-family);
+  font-size: 24px;
+}
+a {
+  font-family: var(--font-family);
+}
