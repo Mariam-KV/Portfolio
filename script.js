@@ -1,40 +1,48 @@
-function addFunc() {
-  let doing = document.getElementById("add");
-  doing.classList.add("hide");
-}
-
-function removeFunc() {
-  let doing = document.getElementById("add");
-  doing.classList.remove("hide");
-}
-/*let links = document.querySelectorAll("a");
-links.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    let href = link.getAttribute("href");
-    if (href === "#") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else if (href != "#" && href.startsWith("#")) {
-      let imp = document.querySelector(href);
-
-      imp.scrollIntoView({ behavior: "smooth" });
-    }
-  });
+let sliders = document.querySelectorAll(".slider-box");
+let currSlide = 0;
+sliders.forEach((el, index) => {
+  el.style.transform = `translateX(${index * 110}%)`;
 });
-*/
-let header = document.querySelector(".header");
-let observer = new IntersectionObserver(
-  function (entries) {
-    let entry = entries[0];
-    if (entry.isIntersecting === false) {
-      document.querySelector(".nav").classList.add("sticky");
-    } else {
-      document.querySelector(".nav").classList.remove("sticky");
-    }
-  },
-  {
-    root: null,
-    threshold: 0,
+
+let box = document.querySelector(".box");
+let moveRight = () => {
+  if (currSlide === maxSlide - 1) {
+    currSlide = 0;
+  } else {
+    currSlide++;
   }
-);
-observer.observe(header);
+  move(currSlide);
+};
+let moveLeft = () => {
+  if (currSlide === 0) {
+    currSlide = maxSlide - 1;
+  } else {
+    currSlide--;
+  }
+  move(currSlide);
+};
+let maxSlide = sliders.length;
+let pointerRight = document
+  .querySelector(".pointer-left")
+  .addEventListener("click", moveLeft);
+
+let pointerLeft = document
+  .querySelector(".pointer-right")
+  .addEventListener("click", moveRight);
+
+let move = (slide) => {
+  sliders.forEach((el, index) => {
+    el.style.transform = `translateX(${(index - slide) * 110}%)`;
+
+    el.classList.remove("hide-box");
+  });
+};
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowRight") {
+    moveRight();
+  } else if (e.key === "ArrowLeft") {
+    moveLeft();
+  }
+  //same e.key === "ArrowRight" && moveLeft()
+});

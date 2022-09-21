@@ -10,7 +10,13 @@ $primary-color: #6c63ff
     font-size: 2rem
 .purple
     color: $primary-color
+    transition: .5s
+    &:hover
+        transform: skewX(-15deg)
 
 .title
     text-align: center
-    font-size: 6rem
+    font-size: max(3rem, 5vw)
+
+.pb-3
+    padding-bottom: 3rem

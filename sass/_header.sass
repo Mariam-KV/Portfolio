@@ -5,20 +5,63 @@
     text-align: center
     h3 
         font-family: "Poppins", sans-serif
-        color: #272142
-        font-size: 4rem
+        
+        font-size: max(2rem, 3.5vw)
         line-height: 3rem
         font-weight: bold
         
-    h1
-        font-size: 8rem
-        
+    .H1
+        font-size: max(3rem, 6vw)
+        display: inline-block
         font-weight: bold
+        margin-left: 2rem
 
     h2 
         
         margin: 2rem 0
+       
         
     p
         color: #272142
 
+.left-side
+    animation-name: left
+    animation-duration: 2s
+    animation-delay: 1s
+ 
+.right-side  
+    animation-name: right
+    animation-duration: 2s
+    animation-delay: 1s
+@keyframes left
+    0% 
+        opacity: 0
+        transform: translateX(-20rem)
+
+
+    80% 
+        transform: translateX(30vw)
+        opacity: 1
+
+    100% 
+        opacity: 1
+@keyframes right
+    0% 
+        opacity: 0
+        transform: translateX(20rem)
+
+
+    80% 
+        transform: translateX(-30vw)
+        opacity: 1
+
+    100% 
+        opacity: 1
+@keyframes btn
+    0% 
+        opacity: 0
+        transform: translateY(40rem)
+
+
+    100% 
+        opacity: 1
