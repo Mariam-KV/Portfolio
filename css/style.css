@@ -359,6 +359,31 @@
     transform: scale(1.4, 1.3);
   }
 }
+.btnSimple {
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #6c63ff;
+  font-size: 2rem;
+  color: #6c63ff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.btnSimple:hover {
+  transform: translateY(-0.5rem);
+}
+
+.btns {
+  position: absolute;
+  display: flex;
+  gap: 3rem;
+  z-index: -3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .text-style1 {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -482,6 +507,10 @@
     grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5";
   }
 }
+.photos {
+  position: relative;
+}
+
 .grid-applications {
   display: grid;
   justify-items: center;
@@ -562,10 +591,11 @@
 }
 
 .grid__photo img {
+  transition: 1s;
   cursor: pointer;
 }
 .grid__photo img:hover {
-  opacity: 0.3;
+  opacity: 0;
 }
 
 * {

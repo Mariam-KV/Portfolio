@@ -21,7 +21,8 @@
         grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5"
        
     
-
+.photos
+    position: relative
 .grid-applications
     display: grid
     justify-items: center
@@ -88,10 +89,10 @@
     display: none
 .grid__photo
     img
-        
+        transition: 1s
         cursor: pointer
     img:hover
-        opacity: .3
+        opacity: 0
         
     
        

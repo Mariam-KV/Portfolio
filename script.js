@@ -110,4 +110,7 @@ navLinks.addEventListener("click", (e) => {
     navLinks.classList.remove("make-menu");
     navLinks.style.display = "none";
   }
-});*/
+});
+
+
+*/
