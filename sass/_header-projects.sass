@@ -1,13 +1,45 @@
 .grid-big
     display: grid
+    justify-items: center
+    align-items: center
+    gap: 1rem
+    grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5"
+
+    img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .purple
+        font-size: 3rem
+@media (min-width: 800px)  
+    .grid-big
+        grid-template-areas: "photo2 photo4 photo1 "  "photo3 photo4 photo5"
+        
+@media (max-width: 800px)
+    .grid-big
+        grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5"
+       
+    
+
+
    
-    grid-template-areas: "info1 photo1" "info2 photo2" "info3 photo3" "info4 photo4" "info5 photo5"
+.photo1
+    grid-area: photo1  
+     
+.photo2
+    grid-area: photo2  
+.photo3
+    grid-area: photo3  
+.photo4
+    grid-area: photo4   
+.photo5
+    grid-area: photo5
+
+
 
     
-    
-    
-    
-    
+       
+     
     
 .projects
     h1
@@ -23,7 +55,7 @@
     display: none
 .grid__photo
     img
-        width: 80%
+        
         cursor: pointer
     img:hover
         opacity: .3

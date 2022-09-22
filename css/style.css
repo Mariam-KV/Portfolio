@@ -336,13 +336,14 @@
   justify-items: center;
   gap: 5rem;
 }
-.grid .history__photo {
+
+.history__photo {
   width: 80%;
   border-radius: 5rem;
   transition: 1s;
   cursor: pointer;
 }
-.grid .history__photo:hover {
+.history__photo .history__photo:hover {
   transform: scale(1.1);
   outline-offset: 2rem;
   outline: 0.7rem solid #6c63ff;
@@ -387,7 +388,48 @@
 
 .grid-big {
   display: grid;
-  grid-template-areas: "info1 photo1" "info2 photo2" "info3 photo3" "info4 photo4" "info5 photo5";
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5";
+}
+.grid-big img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid-big .purple {
+  font-size: 3rem;
+}
+
+@media (min-width: 800px) {
+  .grid-big {
+    grid-template-areas: "photo2 photo4 photo1 " "photo3 photo4 photo5";
+  }
+}
+@media (max-width: 800px) {
+  .grid-big {
+    grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5";
+  }
+}
+.photo1 {
+  grid-area: photo1;
+}
+
+.photo2 {
+  grid-area: photo2;
+}
+
+.photo3 {
+  grid-area: photo3;
+}
+
+.photo4 {
+  grid-area: photo4;
+}
+
+.photo5 {
+  grid-area: photo5;
 }
 
 .projects h1 {
@@ -408,7 +450,6 @@
 }
 
 .grid__photo img {
-  width: 80%;
   cursor: pointer;
 }
 .grid__photo img:hover {
