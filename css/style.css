@@ -31,6 +31,10 @@
   padding: 10rem 0;
 }
 
+.black {
+  color: #343a40;
+}
+
 .text-style1 {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -64,12 +68,15 @@
   padding: 10rem 0;
 }
 
+.black {
+  color: #343a40;
+}
+
 .header {
   padding: 20rem 0;
   text-align: center;
 }
 .header h3 {
-  font-family: "Poppins", sans-serif;
   font-size: max(2rem, 3.5vw);
   line-height: 3rem;
   font-weight: bold;
@@ -167,6 +174,10 @@
   padding: 10rem 0;
 }
 
+.black {
+  color: #343a40;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -184,7 +195,6 @@
 }
 .nav__list a {
   text-decoration: none;
-  color: #272142;
 }
 
 .text-style1 {
@@ -218,6 +228,10 @@
 
 .ptb-5 {
   padding: 10rem 0;
+}
+
+.black {
+  color: #343a40;
 }
 
 .btn {
@@ -311,31 +325,34 @@
   padding: 10rem 0;
 }
 
-.history {
+.black {
+  color: #343a40;
+}
+
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
   gap: 5rem;
-  padding: 5rem 0;
 }
-.history img {
+.grid .history__photo {
   width: 80%;
   border-radius: 5rem;
   transition: 1s;
   cursor: pointer;
 }
-.history img:hover {
+.grid .history__photo:hover {
   transform: scale(1.1);
   outline-offset: 2rem;
   outline: 0.7rem solid #6c63ff;
 }
 
 @media (max-width: 1050px) {
-  .history {
+  .grid {
     grid-template-columns: 1fr;
   }
-  .history img {
+  .grid img {
     width: 60vw;
   }
 }
@@ -368,6 +385,11 @@
   z-index: 34;
 }
 
+.grid-big {
+  display: grid;
+  grid-template-areas: "info1 photo1" "info2 photo2" "info3 photo3" "info4 photo4" "info5 photo5";
+}
+
 .projects h1 {
   font-size: max(3rem, 3vw);
   max-width: 50rem;
@@ -385,6 +407,14 @@
   display: none;
 }
 
+.grid__photo img {
+  width: 80%;
+  cursor: pointer;
+}
+.grid__photo img:hover {
+  opacity: 0.3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -393,6 +423,7 @@
 body {
   font-family: "Playfair Display", serif;
   background-color: #f9f7fe;
+  color: #343a40;
 }
 
 html {

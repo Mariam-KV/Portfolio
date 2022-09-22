@@ -1,26 +1,26 @@
 @import "_variables.sass"
     
-.history
+.grid
     display: grid
     grid-template-columns: 1fr 1fr
     align-items: center
     justify-items: center
     gap: 5rem
-    padding: 5rem 0
-    img
+
+    .history__photo
         
         width: 80%
         border-radius: 5rem
         transition: 1s
         cursor: pointer
 
-    img:hover
+    .history__photo:hover
         transform: scale(1.1)
         outline-offset: 2rem
         outline: 0.7rem solid $primary-color
     
 @media (max-width: 1050px)
-    .history
+    .grid
         grid-template-columns: 1fr 
         img
             width: 60vw
