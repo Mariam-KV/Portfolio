@@ -6,7 +6,8 @@
     align-items: center
     justify-items: center
     gap: 5rem
-
+.history
+    padding: 10rem 0
 .history__photo
         
     width: 80%
@@ -14,7 +15,7 @@
     transition: 1s
     cursor: pointer   
 
-    .history__photo:hover
+    &:hover
         transform: scale(1.1)
         outline-offset: 2rem
         outline: 0.7rem solid $primary-color
@@ -23,4 +24,4 @@
     .grid
         grid-template-columns: 1fr 
         img
-            width: 60vw
+            width: 50vw

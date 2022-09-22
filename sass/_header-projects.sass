@@ -1,4 +1,4 @@
-.grid-big
+.grid-sites
     display: grid
     justify-items: center
     align-items: center
@@ -7,21 +7,44 @@
 
     img
             width: 100%
-            height: 100%
+            
+          
             object-fit: cover
     .purple
         font-size: 3rem
 @media (min-width: 800px)  
-    .grid-big
+    .grid-sites
         grid-template-areas: "photo2 photo4 photo1 "  "photo3 photo4 photo5"
         
 @media (max-width: 800px)
-    .grid-big
+    .grid-sites
         grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5"
        
     
 
+.grid-applications
+    display: grid
+    justify-items: center
+    align-items: center
+    gap: 3rem
+    grid-template-areas: "photo1" "photo2" "photo3" "photo4" 
 
+    img
+            width: 100%
+            
+            
+          
+        
+    .purple
+        font-size: 3rem
+@media (min-width: 800px)  
+    .grid-applications
+        grid-template-areas: "photo1a photo2a"  "photo3a photo4a"
+        
+@media (max-width: 800px)
+    .grid-applications
+        grid-template-areas: "photo1a" "photo2a" "photo3a" "photo4a"
+       
    
 .photo1
     grid-area: photo1  
@@ -34,6 +57,14 @@
     grid-area: photo4   
 .photo5
     grid-area: photo5
+.photo1a
+    grid-area: photo1a  
+.photo2a
+    grid-area: photo2a 
+.photo3a
+    grid-area: photo3a   
+.photo4a
+    grid-area: photo4a
 
 
 
@@ -48,6 +79,8 @@
     &__buttons
         display: flex
         justify-content: space-evenly
+        flex-wrap: wrap
+        gap: 2rem
         .btn
             width: 25rem
             height: 5rem

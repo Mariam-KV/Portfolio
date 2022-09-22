@@ -72,8 +72,20 @@
   color: #343a40;
 }
 
+.introdaction {
+  position: responsive;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  fill: #6c63ff;
+  width: 7rem;
+}
+
 .header {
-  padding: 20rem 0;
+  padding: 17vw 0;
   text-align: center;
 }
 .header h3 {
@@ -337,13 +349,17 @@
   gap: 5rem;
 }
 
+.history {
+  padding: 10rem 0;
+}
+
 .history__photo {
   width: 80%;
   border-radius: 5rem;
   transition: 1s;
   cursor: pointer;
 }
-.history__photo .history__photo:hover {
+.history__photo:hover {
   transform: scale(1.1);
   outline-offset: 2rem;
   outline: 0.7rem solid #6c63ff;
@@ -354,7 +370,7 @@
     grid-template-columns: 1fr;
   }
   .grid img {
-    width: 60vw;
+    width: 50vw;
   }
 }
 .feedback__box {
@@ -386,30 +402,53 @@
   z-index: 34;
 }
 
-.grid-big {
+.grid-sites {
   display: grid;
   justify-items: center;
   align-items: center;
   gap: 1rem;
   grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5";
 }
-.grid-big img {
+.grid-sites img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
-.grid-big .purple {
+.grid-sites .purple {
   font-size: 3rem;
 }
 
 @media (min-width: 800px) {
-  .grid-big {
+  .grid-sites {
     grid-template-areas: "photo2 photo4 photo1 " "photo3 photo4 photo5";
   }
 }
 @media (max-width: 800px) {
-  .grid-big {
+  .grid-sites {
     grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5";
+  }
+}
+.grid-applications {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  grid-template-areas: "photo1" "photo2" "photo3" "photo4";
+}
+.grid-applications img {
+  width: 100%;
+}
+.grid-applications .purple {
+  font-size: 3rem;
+}
+
+@media (min-width: 800px) {
+  .grid-applications {
+    grid-template-areas: "photo1a photo2a" "photo3a photo4a";
+  }
+}
+@media (max-width: 800px) {
+  .grid-applications {
+    grid-template-areas: "photo1a" "photo2a" "photo3a" "photo4a";
   }
 }
 .photo1 {
@@ -432,6 +471,22 @@
   grid-area: photo5;
 }
 
+.photo1a {
+  grid-area: photo1a;
+}
+
+.photo2a {
+  grid-area: photo2a;
+}
+
+.photo3a {
+  grid-area: photo3a;
+}
+
+.photo4a {
+  grid-area: photo4a;
+}
+
 .projects h1 {
   font-size: max(3rem, 3vw);
   max-width: 50rem;
@@ -439,6 +494,8 @@
 .projects__buttons {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 .projects__buttons .btn {
   width: 25rem;
@@ -477,7 +534,7 @@ a {
 
 .container-big {
   max-width: 110rem;
-  padding: 5rem 10vw;
+  padding: 3rem 10vw;
 }
 
 .container-little {
