@@ -23,6 +23,13 @@
     
 .photos
     position: relative
+    z-index: 34444
+    &:hover
+        img 
+            opacity: 0
+        .btns
+            transition: 1s
+            opacity: 1
 .grid-applications
     display: grid
     justify-items: center
@@ -91,8 +98,7 @@
     img
         transition: 1s
         cursor: pointer
-    img:hover
-        opacity: 0
+    
         
     
        

@@ -375,10 +375,10 @@
 }
 
 .btns {
+  opacity: 0;
   position: absolute;
   display: flex;
   gap: 3rem;
-  z-index: -3;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -509,6 +509,14 @@
 }
 .photos {
   position: relative;
+  z-index: 34444;
+}
+.photos:hover img {
+  opacity: 0;
+}
+.photos:hover .btns {
+  transition: 1s;
+  opacity: 1;
 }
 
 .grid-applications {
@@ -593,9 +601,6 @@
 .grid__photo img {
   transition: 1s;
   cursor: pointer;
-}
-.grid__photo img:hover {
-  opacity: 0;
 }
 
 * {
