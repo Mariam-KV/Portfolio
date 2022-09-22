@@ -80,10 +80,35 @@
   position: absolute;
   bottom: 5rem;
   right: 5rem;
+}
+
+.purpleSVG {
   fill: #6c63ff;
   width: 7rem;
 }
 
+.menu {
+  display: none;
+  height: 3rem;
+}
+
+.x {
+  display: none;
+}
+
+.newmenu {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__list {
+    display: none !important;
+  }
+}
 .header {
   padding: 17vw 0;
   text-align: center;
@@ -194,9 +219,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  padding: 3rem 0;
 }
-.nav__logo {
+.nav__logo a {
   font-size: 2rem;
+  color: #6c63ff;
 }
 .nav__list {
   font-size: 2rem;
@@ -207,6 +235,33 @@
 }
 .nav__list a {
   text-decoration: none;
+  color: #343a40;
+  transition: 1s;
+}
+.nav__list a:hover {
+  color: #6c63ff;
+}
+
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 0;
+  right: 0;
+  padding: 1.5rem 10vw;
+  z-index: 78865;
+}
+
+.make-menu {
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  font-size: 5rem;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+.make-menu a {
+  margin: 0;
 }
 
 .text-style1 {
@@ -534,7 +589,7 @@ a {
 
 .container-big {
   max-width: 110rem;
-  padding: 3rem 10vw;
+  padding: 0 10vw;
 }
 
 .container-little {

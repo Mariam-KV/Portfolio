@@ -3,8 +3,12 @@
     display: flex
     justify-content: space-between
     align-items: center
+    position: relative
+    padding: 3rem 0
     &__logo
-        font-size: 2rem
+        a
+            font-size: 2rem
+            color: $primary-color
     &__list
         font-size: 2rem
         align-items: center
@@ -13,6 +17,11 @@
         gap: 2rem
         a 
             text-decoration: none
+            color: #343a40
+            transition: 1s
+
+        a:hover
+            color: $primary-color
            
 
 
@@ -20,3 +29,24 @@
 
   
   
+.sticky
+    position: fixed
+    background-color: rgba(255,255,255,0.8)
+    left: 0
+    right: 0
+    padding: 1.5rem 10vw
+    z-index: 78865
+    
+
+
+.make-menu
+    position: absolute
+    justify-content: center
+    text-align: center
+    gap: 3rem
+    font-size: 5rem
+    
+    height: 100vh
+    background-color: rgba(255,255,2445)
+    a
+        margin: 0

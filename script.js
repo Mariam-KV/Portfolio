@@ -1,4 +1,4 @@
-let sliders = document.querySelectorAll(".slider-box");
+/*let sliders = document.querySelectorAll(".slider-box");
 let currSlide = 0;
 sliders.forEach((el, index) => {
   el.style.transform = `translateX(${index * 110}%)`;
@@ -45,7 +45,19 @@ document.addEventListener("keydown", function (e) {
     moveLeft();
   }
   //same e.key === "ArrowRight" && moveLeft()
+});*/
+//scrolling
+let nav = document.querySelector(".nav");
+
+nav.addEventListener("click", function (e) {
+  let id = e.target.getAttribute("href");
+  if (id.startsWith("#")) {
+    e.preventDefault();
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    e.target.classList.contains("clicking");
+  }
 });
+
 //projects
 let first = document.querySelector(".first");
 let second = document.querySelector(".second");
@@ -66,3 +78,36 @@ let buttons = document
 function adding(first) {
   first.classList.add("hidecontent");
 }
+
+//menu
+
+let header = document.querySelector(".header");
+function func(entries) {
+  let [entry] = entries;
+  if (!entry.isIntersecting) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+let obesrver = new IntersectionObserver(func, {
+  null: 0,
+  threshold: 0,
+  rootMargin: "-80px",
+});
+obesrver.observe(header);
+/*let navLinks = document.querySelector(".newmenu");
+let x = document.querySelector(".x");
+let svgHide = document.querySelector(".menu").addEventListener("click", () => {
+  x.style.display = "block";
+  navLinks.classList.add("make-menu");
+  navLinks.style.display = "flex";
+  navLinks.style.flexDirection = "column";
+});
+navLinks.addEventListener("click", (e) => {
+  if (e.target.classList.contains("clicked")) {
+    x.style.display = "none";
+    navLinks.classList.remove("make-menu");
+    navLinks.style.display = "none";
+  }
+});*/
