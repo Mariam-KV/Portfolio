@@ -29,6 +29,7 @@
     color: $primary-color
     .projectTitle
         font-size: 3rem
+        margin-bottom: 2rem
     .projectDescription
         font-size: 1.6rem
         color:  #343a40
@@ -123,4 +124,10 @@
 
         
     
-       
+.section--hidden
+    opacity: 0
+    
+    transform: translate(20rem,20rem)
+.section
+    border-bottom: 1px solid #ddd
+    transition: transform 1s, opacity 1s

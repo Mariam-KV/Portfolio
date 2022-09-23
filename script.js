@@ -42,7 +42,6 @@ document.addEventListener("keydown", function (e) {
   } else if (e.key === "ArrowLeft") {
     moveLeft();
   }
-  //same e.key === "ArrowRight" && moveLeft()
 });
 //scrolling
 let nav = document.querySelector(".nav");
@@ -91,7 +90,6 @@ function func(entries) {
 let obesrver = new IntersectionObserver(func, {
   null: 0,
   threshold: 0,
-  rootMargin: "-80px",
 });
 obesrver.observe(header);
 
@@ -106,4 +104,21 @@ navLinks.addEventListener("click", (e) => {
   x.style.display = "none";
   navLinks.classList.remove("make-menu");
   navLinks.style.display = "none";
+});
+//revealing section
+let sections = document.querySelectorAll(".section");
+function funcSection(entries) {
+  let entry = entries[0];
+  if (entry.isIntersecting) {
+    entry.target.classList.remove("section--hidden");
+    observerSection.unobserve(entry.target);
+  }
+}
+let observerSection = new IntersectionObserver(funcSection, {
+  null: 0,
+  threshold: 0.1,
+});
+sections.forEach((el) => {
+  observerSection.observe(el);
+  el.classList.add("section--hidden");
 });

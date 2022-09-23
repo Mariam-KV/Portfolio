@@ -616,6 +616,7 @@
 }
 .description .projectTitle {
   font-size: 3rem;
+  margin-bottom: 2rem;
 }
 .description .projectDescription {
   font-size: 1.6rem;
@@ -727,6 +728,16 @@
   display: none;
 }
 
+.section--hidden {
+  opacity: 0;
+  transform: translate(20rem, 20rem);
+}
+
+.section {
+  border-bottom: 1px solid #ddd;
+  transition: transform 1s, opacity 1s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -736,6 +747,7 @@ body {
   font-family: "Playfair Display", serif;
   background-color: #f9f7fe;
   color: #343a40;
+  overflow-x: hidden;
 }
 
 html {

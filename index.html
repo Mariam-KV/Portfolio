@@ -45,12 +45,13 @@
           <ul class="nav__list main_nav_list" id="nav_list">
             <li><a href="#about" class="clicked clicking">About</a></li>
             <li><a href="#work" class="clicked clicking">Work</a></li>
+            <li><a href="#contact" class="clicked clicking">Contact</a></li>
           </ul>
         </div>
         <div class="newmenu">
           <a href="#about" class="clicked clicking">About</a>
           <a href="#work" class="clicked clicking">Work</a>
-
+          <a href="#contact" class="clicked clicking">Contact</a>
           <svg class="x purpleSVG">
             <use xlink:href="symbol-defs.svg#icon-x"></use>
           </svg>
@@ -60,7 +61,7 @@
         </svg>
       </nav>
       <div class="container-big">
-        <section class="introdaction">
+        <section class="introdaction section">
           <div class="header clicking" id="header">
             <h3>👋 Hello i'm</h3>
 
@@ -81,53 +82,59 @@
           </div>
         </section>
       </div>
-      <div class="container-little">
-        <section class="history grid clicking" id="about">
-          <div class="history__text">
-            <h3 class="purple title pb-3">About me</h3>
-            <p class="text-style-little">
-              My story with programming started with
-              <a href="https://www.shecodes.io/" class="purple" target="_blank"
-                >Shecodes</a
-              >
-              workshops , during which I fell in love with Frontend developmnet
-              . It contains everything that i was looking for - freedom,
-              creativity, the process of creation .I learned how to use a lot of
-              techniques that help make the site more modern and responsive.<br />
-              Skills that i use often -
-              <span class="purple">HTML, CSS, JS/ES6, SASS, React, Git</span>. I
-              also continue to improve my knowledge with the help of the courses
-              at Udemy .
-            </p>
-          </div>
+      <div class="container-little" id="about">
+        <section class="history clicking section">
+          <div class="grid">
+            <div class="history__text">
+              <h3 class="purple title pb-3">About me</h3>
+              <p class="text-style-little">
+                My story with programming started with
+                <a
+                  href="https://www.shecodes.io/"
+                  class="purple"
+                  target="_blank"
+                  >Shecodes</a
+                >
+                workshops , during which I fell in love with Frontend
+                developmnet . It contains everything that i was looking for -
+                freedom, creativity, the process of creation .I learned how to
+                use a lot of techniques that help make the site more modern and
+                responsive.<br />
+                Skills that i use often -
+                <span class="purple">HTML, CSS, JS/ES6, SASS, React, Git</span>.
+                I also continue to improve my knowledge with the help of the
+                courses at Udemy .
+              </p>
+            </div>
 
-          <img
-            class="history__photo"
-            src="photos/100042666.DhHcG (1).webp"
-            alt="me"
-          />
+            <img
+              class="history__photo"
+              src="photos/100042666.DhHcG (1).webp"
+              alt="me"
+            />
+          </div>
+          <div class="feedback__box">
+            <div class="feedback__box-pointer">
+              <button class="pointer-left">←</button>
+            </div>
+
+            <div class="slider">
+              <div class="slide">
+                <img src="photos/resultP.webp" alt="sertification" />
+              </div>
+              <div class="slide hide-box">
+                <img src="photos/result.webp" alt="sertification" />
+              </div>
+              <div class="slide hide-box">
+                <img src="photos/resultReact.webp" alt="sertification" />
+              </div>
+            </div>
+
+            <div class="feedback__box-pointer">
+              <button class="feedback__box-pointer pointer-right">→</button>
+            </div>
+          </div>
         </section>
-        <div class="feedback__box">
-          <div class="feedback__box-pointer">
-            <button class="pointer-left">←</button>
-          </div>
-
-          <div class="slider">
-            <div class="slide">
-              <img src="photos/resultP.webp" alt="sertification" />
-            </div>
-            <div class="slide hide-box">
-              <img src="photos/result.webp" alt="sertification" />
-            </div>
-            <div class="slide hide-box">
-              <img src="photos/resultReact.webp" alt="sertification" />
-            </div>
-          </div>
-
-          <div class="feedback__box-pointer">
-            <button class="feedback__box-pointer pointer-right">→</button>
-          </div>
-        </div>
       </div>
       <!--
     
@@ -168,8 +175,8 @@
         </div>
       </div>
     </div>-->
-      <div class="container-big">
-        <section class="projects clicking" id="work">
+      <div class="container-big" id="work">
+        <section class="projects clicking section">
           <h1 class="ptb-5">Take a look at what I've been working on!</h1>
           <div class="projects__buttons">
             <a href="#sites" class="btnSimple button1">Responsive websites</a>
@@ -333,7 +340,7 @@
                   <div class="description">
                     <h2 class="projectTitle">Calculator app</h2>
                     <p class="projectDescription">
-                      With this app you make quick calculations.<br />
+                      With this app you can make quick calculations.<br />
                       I used: <span>JS , API/AJAX , React.</span>
                     </p>
                     <div class="descButtons">
@@ -382,6 +389,10 @@
           </div>
         </section>
       </div>
+      <section class="container-big section" id="contact">
+        <div class="contact"></div>
+      </section>
+
       <!--
   
 
