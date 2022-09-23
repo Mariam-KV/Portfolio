@@ -23,6 +23,11 @@
   font-size: max(3rem, 5vw);
 }
 
+.title2 {
+  font-size: max(3rem, 3vw);
+  max-width: 50rem;
+}
+
 .pb-3 {
   padding-bottom: 3rem;
 }
@@ -62,6 +67,11 @@
 .title {
   text-align: center;
   font-size: max(3rem, 5vw);
+}
+
+.title2 {
+  font-size: max(3rem, 3vw);
+  max-width: 50rem;
 }
 
 .pb-3 {
@@ -159,16 +169,17 @@
   line-height: 3rem;
   font-weight: bold;
 }
-.header .H1 {
+
+.H1 {
   font-size: 9rem;
   display: inline-block;
   font-weight: bold;
   margin: 0 2rem;
 }
-.header h2 {
+.H1 h2 {
   margin: 2rem 0;
 }
-.header p {
+.H1 p {
   color: #272142;
 }
 
@@ -242,6 +253,11 @@
 .title {
   text-align: center;
   font-size: max(3rem, 5vw);
+}
+
+.title2 {
+  font-size: max(3rem, 3vw);
+  max-width: 50rem;
 }
 
 .pb-3 {
@@ -319,6 +335,11 @@
 .title {
   text-align: center;
   font-size: max(3rem, 5vw);
+}
+
+.title2 {
+  font-size: max(3rem, 3vw);
+  max-width: 50rem;
 }
 
 .pb-3 {
@@ -450,6 +471,11 @@
   font-size: max(3rem, 5vw);
 }
 
+.title2 {
+  font-size: max(3rem, 3vw);
+  max-width: 50rem;
+}
+
 .pb-3 {
   padding-bottom: 3rem;
 }
@@ -563,6 +589,11 @@
 .title {
   text-align: center;
   font-size: max(3rem, 5vw);
+}
+
+.title2 {
+  font-size: max(3rem, 3vw);
+  max-width: 50rem;
 }
 
 .pb-3 {
@@ -706,11 +737,8 @@
 }
 
 .projects {
+  position: relative;
   min-height: 100vh;
-}
-.projects h1 {
-  font-size: max(3rem, 3vw);
-  max-width: 50rem;
 }
 .projects__buttons {
   display: flex;
@@ -736,6 +764,91 @@
 .section {
   border-bottom: 1px solid #ddd;
   transition: transform 1s, opacity 1s;
+}
+
+.text-style1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+
+.text-style-little {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.purple {
+  color: #6c63ff;
+  transition: 0.5s;
+}
+.purple:hover {
+  transform: skewX(-15deg);
+}
+
+.title {
+  text-align: center;
+  font-size: max(3rem, 5vw);
+}
+
+.title2 {
+  font-size: max(3rem, 3vw);
+  max-width: 50rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.ptb-5 {
+  padding: 10rem 0;
+}
+
+.black {
+  color: #343a40;
+}
+
+.white {
+  color: white;
+}
+
+.gmail {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+.footer__links {
+  display: flex;
+  padding-bottom: 3rem;
+  justify-content: space-evenly;
+}
+
+.content {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.content__label {
+  font-size: 2rem;
+  padding-right: 2rem;
+}
+.content__input {
+  border-radius: 2rem;
+  border: 0.3rem solid #6c63ff;
+  height: 3rem;
+  min-width: 20rem;
+  max-width: 40rem;
+}
+.content__message {
+  border-radius: 2rem;
+  border: 0.3rem solid #6c63ff;
 }
 
 * {
