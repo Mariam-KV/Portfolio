@@ -1,17 +1,12 @@
 .feedback
-
-   
-
-               
     &__box
         display: grid
         grid-template-columns: min-content 1fr min-content
         align-items: center
-        gap: 3rem
-        
-      
-        &-pointer
-            button
+        padding: 7rem 0
+        gap: 1rem
+    &__box-pointer
+        button
                 cursor: pointer
                 background-color: #f0f0f093
                 border: none
@@ -20,16 +15,35 @@
                 font-weight: 500
                 padding: 1rem
                 border-radius: 50%
-.box
+      
+/*    
+    padding: 15rem 10rem
+    &__header
+        padding: 5rem 
+
+       
+    
+    
+        img
+            
+            width: 500%
+            margin-right: 2rem*/
+
+.slider
     display: flex
     position: relative
     overflow: hidden
+.hide-box
+    
+    position: absolute
+ 
+    
+  
+.slide
+    
+    display: flex
+    justify-content: center
     img
-        width: 300%
-      
-
-
-
-
-.pointer-left,.pointer-right
-    z-index: 34
+        
+        max-width: 100%
+       

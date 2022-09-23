@@ -1,7 +1,7 @@
-/*let sliders = document.querySelectorAll(".slider-box");
+let sliders = document.querySelectorAll(".slide");
 let currSlide = 0;
 sliders.forEach((el, index) => {
-  el.style.transform = `translateX(${index * 110}%)`;
+  el.style.transform = `translateX(${index * 100}%)`;
 });
 
 let box = document.querySelector(".box");
@@ -33,8 +33,6 @@ let pointerLeft = document
 let move = (slide) => {
   sliders.forEach((el, index) => {
     el.style.transform = `translateX(${(index - slide) * 110}%)`;
-
-    el.classList.remove("hide-box");
   });
 };
 
@@ -45,7 +43,7 @@ document.addEventListener("keydown", function (e) {
     moveLeft();
   }
   //same e.key === "ArrowRight" && moveLeft()
-});*/
+});
 //scrolling
 let nav = document.querySelector(".nav");
 

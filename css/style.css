@@ -135,7 +135,7 @@
   display: none;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .menu {
     display: inline-block;
     cursor: pointer;
@@ -146,18 +146,21 @@
   .nav {
     padding: 2rem;
   }
+  .H1 {
+    font-size: 4rem !important;
+  }
 }
 .header {
   padding: 17vw 0;
   text-align: center;
 }
 .header h3 {
-  font-size: max(2rem, 3.5vw);
+  font-size: max(3rem, 3.5vw);
   line-height: 3rem;
   font-weight: bold;
 }
 .header .H1 {
-  font-size: max(3rem, 6vw);
+  font-size: 9rem;
   display: inline-block;
   font-weight: bold;
   margin-left: 2rem;
@@ -494,7 +497,8 @@
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   align-items: center;
-  gap: 3rem;
+  padding: 7rem 0;
+  gap: 1rem;
 }
 .feedback__box-pointer button {
   cursor: pointer;
@@ -506,17 +510,29 @@
   border-radius: 50%;
 }
 
-.box {
+/*  padding: 15rem 10rem
+ *  &__header
+ *      padding: 5rem 
+ *
+ *      img
+ *          width: 500%
+ *          margin-right: 2rem*/
+.slider {
   display: flex;
   position: relative;
   overflow: hidden;
 }
-.box img {
-  width: 300%;
+
+.hide-box {
+  position: absolute;
 }
 
-.pointer-left, .pointer-right {
-  z-index: 34;
+.slide {
+  display: flex;
+  justify-content: center;
+}
+.slide img {
+  max-width: 100%;
 }
 
 .grid-sites {
