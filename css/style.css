@@ -163,7 +163,7 @@
   font-size: 9rem;
   display: inline-block;
   font-weight: bold;
-  margin-left: 2rem;
+  margin: 0 2rem;
 }
 .header h2 {
   margin: 2rem 0;
@@ -395,6 +395,10 @@
     transform: scale(1.4, 1.3);
   }
 }
+.button1, .button2 {
+  width: 22rem;
+}
+
 .btnSimple {
   background-color: transparent;
   padding: 1rem;
@@ -403,6 +407,7 @@
   font-size: 2rem;
   color: #6c63ff;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   transition: 1s;
 }
@@ -535,6 +540,47 @@
   max-width: 100%;
 }
 
+.text-style1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+
+.text-style-little {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.purple {
+  color: #6c63ff;
+  transition: 0.5s;
+}
+.purple:hover {
+  transform: skewX(-15deg);
+}
+
+.title {
+  text-align: center;
+  font-size: max(3rem, 5vw);
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.ptb-5 {
+  padding: 10rem 0;
+}
+
+.black {
+  color: #343a40;
+}
+
+.white {
+  color: white;
+}
+
 .grid-sites {
   display: grid;
   justify-items: center;
@@ -552,7 +598,7 @@
 
 @media (min-width: 800px) {
   .grid-sites {
-    grid-template-areas: "photo2 photo4 photo1 " "photo3 photo4 photo5";
+    grid-template-areas: "photo1 photo5 photo2 " "photo3 photo5 photo4";
   }
 }
 @media (max-width: 800px) {
@@ -560,6 +606,30 @@
     grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5";
   }
 }
+.description {
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+  transform: translateY(-50%);
+  opacity: 0;
+  color: #6c63ff;
+}
+.description .projectTitle {
+  font-size: 3rem;
+}
+.description .projectDescription {
+  font-size: 1.6rem;
+  color: #343a40;
+}
+.description .projectDescription span {
+  color: #6c63ff;
+}
+.description .descButtons {
+  display: flex;
+  padding: 3rem 0;
+  justify-content: space-evenly;
+}
+
 .photos {
   position: relative;
   z-index: 34444;
@@ -569,7 +639,7 @@
   cursor: pointer;
   opacity: 0;
 }
-.photos:hover .btns {
+.photos:hover .btns, .photos:hover .description {
   transition: 1s;
   opacity: 1;
 }
@@ -646,7 +716,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 15rem 0;
+  padding: 5rem 0;
 }
 .projects__buttons .btn {
   width: 25rem;

@@ -1,3 +1,5 @@
+@import "_variables.sass"
+    
 .grid-sites
     display: grid
     justify-items: center
@@ -7,20 +9,38 @@
 
     img
             width: 100%
-            
-          
             object-fit: cover
     .purple
         font-size: 3rem
 @media (min-width: 800px)  
     .grid-sites
-        grid-template-areas: "photo2 photo4 photo1 "  "photo3 photo4 photo5"
+        grid-template-areas: "photo1 photo5 photo2 "  "photo3 photo5 photo4"
         
 @media (max-width: 800px)
     .grid-sites
         grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5"
        
-    
+.description
+    position: absolute
+    top:50%
+    left:3rem
+    transform: translateY(-50%)
+    opacity: 0 
+    color: $primary-color
+    .projectTitle
+        font-size: 3rem
+    .projectDescription
+        font-size: 1.6rem
+        color:  #343a40
+        span
+            color: $primary-color
+    .descButtons
+        display: flex
+        padding: 3rem 0
+        justify-content: space-evenly
+
+
+
 .photos
     position: relative
     z-index: 34444
@@ -30,7 +50,7 @@
             transition: 1s
             cursor: pointer
             opacity: 0
-        .btns
+        .btns,.description
             transition: 1s
             opacity: 1
 .grid-applications
@@ -93,7 +113,7 @@
         justify-content: space-evenly
         flex-wrap: wrap
         gap: 2rem
-        padding: 15rem 0
+        padding: 5rem 0
         .btn
             width: 25rem
             height: 5rem
