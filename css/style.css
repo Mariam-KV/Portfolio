@@ -35,6 +35,10 @@
   color: #343a40;
 }
 
+.white {
+  color: white;
+}
+
 .text-style1 {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -70,6 +74,10 @@
 
 .black {
   color: #343a40;
+}
+
+.white {
+  color: white;
 }
 
 .introdaction {
@@ -215,6 +223,10 @@
   color: #343a40;
 }
 
+.white {
+  color: white;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -299,6 +311,10 @@
 
 .black {
   color: #343a40;
+}
+
+.white {
+  color: white;
 }
 
 .btn {
@@ -421,6 +437,10 @@
   color: #343a40;
 }
 
+.white {
+  color: white;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -512,6 +532,8 @@
   z-index: 34444;
 }
 .photos:hover img {
+  transition: 1s;
+  cursor: pointer;
   opacity: 0;
 }
 .photos:hover .btns {
@@ -588,6 +610,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 25rem 0;
 }
 .projects__buttons .btn {
   width: 25rem;
@@ -596,11 +619,6 @@
 
 .hidecontent {
   display: none;
-}
-
-.grid__photo img {
-  transition: 1s;
-  cursor: pointer;
 }
 
 * {
