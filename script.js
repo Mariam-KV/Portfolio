@@ -96,21 +96,16 @@ let obesrver = new IntersectionObserver(func, {
   rootMargin: "-80px",
 });
 obesrver.observe(header);
-/*let navLinks = document.querySelector(".newmenu");
+
+let navLinks = document.querySelector(".newmenu");
 let x = document.querySelector(".x");
 let svgHide = document.querySelector(".menu").addEventListener("click", () => {
   x.style.display = "block";
   navLinks.classList.add("make-menu");
   navLinks.style.display = "flex";
-  navLinks.style.flexDirection = "column";
 });
 navLinks.addEventListener("click", (e) => {
-  if (e.target.classList.contains("clicked")) {
-    x.style.display = "none";
-    navLinks.classList.remove("make-menu");
-    navLinks.style.display = "none";
-  }
+  x.style.display = "none";
+  navLinks.classList.remove("make-menu");
+  navLinks.style.display = "none";
 });
-*/
-//buttons
-
