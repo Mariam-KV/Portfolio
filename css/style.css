@@ -532,23 +532,11 @@
   padding: 7rem 0;
   gap: 1rem;
 }
-.feedback__box-pointer button {
+.feedback__box-pointer {
   cursor: pointer;
-  background-color: rgba(240, 240, 240, 0.5764705882);
-  border: none;
-  font-size: 3rem;
-  font-weight: 500;
   padding: 1rem;
-  border-radius: 50%;
 }
 
-/*  padding: 15rem 10rem
- *  &__header
- *      padding: 5rem 
- *
- *      img
- *          width: 500%
- *          margin-right: 2rem*/
 .slider {
   display: flex;
   position: relative;
