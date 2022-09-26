@@ -749,7 +749,7 @@
 }
 
 .section {
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
   transition: transform 1s, opacity 1s;
 }
 
@@ -801,7 +801,7 @@
 
 .gmail {
   text-align: center;
-  font-size: max(2rem, 3vw);
+  font-size: max(1.8rem, 2.5vw);
   padding: 3rem 0;
 }
 
@@ -845,27 +845,4 @@ a {
 .container-little {
   max-width: 130rem;
   padding: 5rem 7vw;
-}
-
-.spinner {
-  height: 100vh;
-  display: flex;
-  color: #6c63ff;
-  justify-content: center;
-  align-items: center;
-}
-.spinner svg {
-  height: 6rem;
-  width: 6rem;
-  fill: #6c63ff;
-  animation: rotate 2s infinite linear;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }/*# sourceMappingURL=style.css.map */

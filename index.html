@@ -36,56 +36,55 @@
     />
   </head>
   <body>
-    <div class="spinner">
-      <svg>
-        <use href="symbol-defs.svg#icon-loader"></use>
-      </svg>
-    </div>
     <div class="all_in">
-      <nav class="nav text-style1">
-        <h4 class="nav__logo clicking">
-          <a href="#header">MK</a>
-        </h4>
-        <div class="nav__list makeHide" id="add">
-          <ul class="nav__list main_nav_list" id="nav_list">
-            <li><a href="#about" class="clicked clicking">About</a></li>
-            <li><a href="#work" class="clicked clicking">Work</a></li>
-          </ul>
-        </div>
-        <div class="newmenu">
-          <a href="#about" class="clicked clicking">About</a>
-          <a href="#work" class="clicked clicking">Work</a>
-
-          <svg class="x purpleSVG">
-            <use xlink:href="symbol-defs.svg#icon-x"></use>
-          </svg>
-        </div>
-        <svg class="menu purpleSVG">
-          <use xlink:href="symbol-defs.svg#icon-menu"></use>
-        </svg>
-      </nav>
-      <div class="container-big">
-        <section class="introdaction section">
-          <div class="header clicking" id="header">
-            <h3 class="h3">👋 Hello i'm</h3>
-
-            <div class="name">
-              <div class="left-side H1"><span class="purple">M</span>ariam</div>
-              <div class="right-side H1">
-                <span class="purple right-side">K</span>virkviia
-              </div>
-            </div>
-
-            <h2 class="text-style1">Frontend Developer</h2>
-            <a
-              href="https://resume.io/r/CgdBot3sD"
-              target="_blank"
-              class="btn animated"
-              >Resume</a
-            >
+      <header>
+        <nav class="nav text-style1">
+          <h4 class="nav__logo clicking">
+            <a href="#header">MK</a>
+          </h4>
+          <div class="nav__list makeHide" id="add">
+            <ul class="nav__list main_nav_list" id="nav_list">
+              <li><a href="#about" class="clicked clicking">About</a></li>
+              <li><a href="#work" class="clicked clicking">Work</a></li>
+            </ul>
           </div>
-        </section>
-      </div>
+          <div class="newmenu">
+            <a href="#about" class="clicked clicking">About</a>
+            <a href="#work" class="clicked clicking">Work</a>
+
+            <svg class="x purpleSVG">
+              <use xlink:href="symbol-defs.svg#icon-x"></use>
+            </svg>
+          </div>
+          <svg class="menu purpleSVG">
+            <use xlink:href="symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </nav>
+        <div class="container-big">
+          <div class="introdaction">
+            <div class="header clicking" id="header">
+              <h3 class="h3">👋 Hello i'm</h3>
+
+              <div class="name">
+                <div class="left-side H1">
+                  <span class="purple">M</span>ariam
+                </div>
+                <div class="right-side H1">
+                  <span class="purple right-side">K</span>virkviia
+                </div>
+              </div>
+
+              <h2 class="text-style1">Frontend Developer</h2>
+              <a
+                href="https://resume.io/r/CgdBot3sD"
+                target="_blank"
+                class="btn animated"
+                >Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
       <div class="container-little" id="about">
         <section class="history clicking section">
           <div class="grid">
@@ -146,7 +145,7 @@
       </div>
 
       <div class="container-big" id="work">
-        <section class="projects clicking">
+        <section class="projects clicking section">
           <h3 class="ptb-5 title2">
             Take a look at what I've been working on!
           </h3>
@@ -399,6 +398,6 @@
         </section>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="JS/script.js"></script>
   </body>
 </html>
