@@ -1,3 +1,4 @@
+
 let menu = function () {
   let nav = document.querySelector(".nav");
 
@@ -30,6 +31,7 @@ let menu = function () {
     .querySelector(".menu")
     .addEventListener("click", () => {
       x.style.display = "block";
+     
       navLinks.classList.add("make-menu");
       navLinks.style.display = "flex";
     });
