@@ -6,3 +6,5 @@ import { menu } from "./menu.js";
 menu();
 import { revealing } from "./revealing_sections.js";
 revealing();
+import { changeTheme } from "./changeTheme.js";
+changeTheme();

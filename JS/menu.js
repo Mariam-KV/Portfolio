@@ -3,7 +3,7 @@ let menu = function () {
 
   nav.addEventListener("click", function (e) {
     let id = e.target.getAttribute("href");
-    if (id.startsWith("#")) {
+    if (id != null && id.startsWith("#")) {
       e.preventDefault();
       document.querySelector(id).scrollIntoView({ behavior: "smooth" });
       e.target.classList.contains("clicking");
