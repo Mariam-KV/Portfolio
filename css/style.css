@@ -173,7 +173,7 @@
   }
 }
 .header {
-  padding: 17vw 0;
+  padding: 20rem 0;
   text-align: center;
 }
 
@@ -863,6 +863,10 @@ body {
 
 html {
   font-size: 62.5%;
+}
+
+header {
+  min-height: 100vh;
 }
 
 a {
