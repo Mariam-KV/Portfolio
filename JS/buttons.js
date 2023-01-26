@@ -1,6 +1,6 @@
 let buttons = function () {
-  let first = document.querySelector(".first");
-  let second = document.querySelector(".second");
+  let second = document.querySelector(".first");
+  let first = document.querySelector(".second");
 
   document
     .querySelector(".projects__buttons")
