@@ -1,25 +1,21 @@
 @import "_variables.sass"
     
 .grid-sites
-    display: grid
-    justify-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
     align-items: center
     gap: 1rem
-    grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5"
+
 
     img
             width: 100%
-            object-fit: cover
+       
+            object-fit: contain
+           
     .purple
         font-size: 3rem
-@media (min-width: 800px)  
-    .grid-sites
-        grid-template-areas: "photo1 photo5 photo2 "  "photo3 photo5 photo4"
-        
-@media (max-width: 800px)
-    .grid-sites
-        grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5"
-       
+    
 .description
     position: absolute
     top:50%
@@ -47,7 +43,9 @@
 .photos
     position: relative
     z-index: 34444
-    
+    max-width: 40rem
+
+    padding:1rem
     &:hover
         img 
             transition: 1s
@@ -56,54 +54,8 @@
         .btns,.description
             transition: 1s
             opacity: 1
-/*.grid-applications
-    display: grid
-    justify-items: center
-    align-items: center
-    gap: 3rem
-    grid-template-areas: "photo1" "photo2" "photo3" "photo4" 
-
-    img
-            width: 100%
-            
-            
-          
-        
-    .purple
-        font-size: 3rem
-    @media (min-width: 800px)  
-        .grid-applications
-            grid-template-areas: "photo1a photo2a"  "photo3a photo4a"
-            
-    @media (max-width: 800px)
-        .grid-applications
-            grid-template-areas: "photo1a" "photo2a" "photo3a" "photo4a"
-        
-    
-    .photo1
-        grid-area: photo1  
-        
-    .photo2
-        grid-area: photo2  
-    .photo3
-        grid-area: photo3  
-    .photo4
-        grid-area: photo4   
-    .photo5
-        grid-area: photo5
-    .photo1a
-        grid-area: photo1a  
-    .photo2a
-        grid-area: photo2a 
-    .photo3a
-        grid-area: photo3a   
-    .photo4a
-        grid-area: photo4a
 
 
-*/
-    
-       
      
     
 .projects

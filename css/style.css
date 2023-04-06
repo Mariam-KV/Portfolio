@@ -525,7 +525,7 @@
 }
 
 .history {
-  padding: 10rem 0;
+  padding: 10rem 0 0;
 }
 
 .history__photo {
@@ -552,7 +552,7 @@
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   align-items: center;
-  padding: 7rem 0;
+  padding: 7rem 0 0;
   gap: 1rem;
 }
 .feedback__box-pointer {
@@ -629,30 +629,20 @@
 }
 
 .grid-sites {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
-  grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5";
 }
 .grid-sites img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .grid-sites .purple {
   font-size: 3rem;
 }
 
-@media (min-width: 800px) {
-  .grid-sites {
-    grid-template-areas: "photo1 photo5 photo2 " "photo3 photo5 photo4";
-  }
-}
-@media (max-width: 800px) {
-  .grid-sites {
-    grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5";
-  }
-}
 .description {
   position: absolute;
   top: 50%;
@@ -683,6 +673,8 @@
 .photos {
   position: relative;
   z-index: 34444;
+  max-width: 40rem;
+  padding: 1rem;
 }
 .photos:hover img {
   transition: 1s;
@@ -692,66 +684,6 @@
 .photos:hover .btns, .photos:hover .description {
   transition: 1s;
   opacity: 1;
-}
-
-.grid-applications {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  gap: 3rem;
-  grid-template-areas: "photo1" "photo2" "photo3" "photo4";
-}
-.grid-applications img {
-  width: 100%;
-}
-.grid-applications .purple {
-  font-size: 3rem;
-}
-
-@media (min-width: 800px) {
-  .grid-applications {
-    grid-template-areas: "photo1a photo2a" "photo3a photo4a";
-  }
-}
-@media (max-width: 800px) {
-  .grid-applications {
-    grid-template-areas: "photo1a" "photo2a" "photo3a" "photo4a";
-  }
-}
-.photo1 {
-  grid-area: photo1;
-}
-
-.photo2 {
-  grid-area: photo2;
-}
-
-.photo3 {
-  grid-area: photo3;
-}
-
-.photo4 {
-  grid-area: photo4;
-}
-
-.photo5 {
-  grid-area: photo5;
-}
-
-.photo1a {
-  grid-area: photo1a;
-}
-
-.photo2a {
-  grid-area: photo2a;
-}
-
-.photo3a {
-  grid-area: photo3a;
-}
-
-.photo4a {
-  grid-area: photo4a;
 }
 
 .projects {
@@ -876,8 +808,8 @@ a {
 }
 
 .container-big {
-  max-width: 110rem;
-  padding: 0 10vw;
+  max-width: 130rem;
+  margin: 0 auto;
 }
 
 .container-little {
