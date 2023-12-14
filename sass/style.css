@@ -38,7 +38,7 @@
 }
 
 .ptb-5 {
-  padding: 10rem 0;
+  padding: 10rem 1rem;
 }
 
 .black {
@@ -89,7 +89,7 @@
 }
 
 .ptb-5 {
-  padding: 10rem 0;
+  padding: 10rem 1rem;
 }
 
 .black {
@@ -284,7 +284,7 @@
 }
 
 .ptb-5 {
-  padding: 10rem 0;
+  padding: 10rem 1rem;
 }
 
 .black {
@@ -370,7 +370,7 @@
 }
 
 .ptb-5 {
-  padding: 10rem 0;
+  padding: 10rem 1rem;
 }
 
 .black {
@@ -506,7 +506,7 @@
 }
 
 .ptb-5 {
-  padding: 10rem 0;
+  padding: 10rem 1rem;
 }
 
 .black {
@@ -564,6 +564,8 @@
   display: flex;
   position: relative;
   overflow: hidden;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .hide-box {
@@ -573,9 +575,11 @@
 .slide {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 .slide img {
-  max-width: 100%;
+  max-width: 90%;
+  height: 100%;
 }
 
 .text-style1 {
@@ -618,7 +622,7 @@
 }
 
 .ptb-5 {
-  padding: 10rem 0;
+  padding: 10rem 1rem;
 }
 
 .black {
@@ -755,7 +759,7 @@
 }
 
 .ptb-5 {
-  padding: 10rem 0;
+  padding: 10rem 1rem;
 }
 
 .black {
@@ -814,7 +818,8 @@ a {
 }
 
 .container-little {
-  max-width: 130rem;
+  margin: 0 auto;
+  max-width: 100rem;
   padding: 5rem 7vw;
 }
 
