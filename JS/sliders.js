@@ -23,13 +23,9 @@ let sliders = function () {
     move(currSlide);
   };
   let maxSlide = sliders.length;
-  let pointerRight = document
-    .querySelector(".pointer-left")
-    .addEventListener("click", moveLeft);
+  document.querySelector(".pointer-left").addEventListener("click", moveLeft);
 
-  let pointerLeft = document
-    .querySelector(".pointer-right")
-    .addEventListener("click", moveRight);
+  document.querySelector(".pointer-right").addEventListener("click", moveRight);
 
   let move = (slide) => {
     sliders.forEach((el, index) => {
